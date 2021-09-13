@@ -1,8 +1,8 @@
-image: proboci/ubuntu:18.04-php7.3
+image: proboci/ubuntu:18.04-php7.4
 assets:
   - drupal9.sql.gz
 steps:
-  - name: Run composer install
+  - name: Run composer install.
     command: "composer install --working-dir=$SRC_DIR"
   - name: Probo site setup
     plugin: Drupal
